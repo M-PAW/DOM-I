@@ -58,4 +58,14 @@ navText[5].textContent = "Contact";
 
 navText.forEach(aColor => aColor.style.color = 'green');
 
-const ctaText = document.querySelector('.cta-text');
+// H1
+const ctaText = document.querySelector('h1');
+ctaText.textContent = "DOM IS AWESOME";
+
+// const navBar = document.querySelector('nav');
+
+// navBar.prepend("<a href=''>Test</a>");
+
+// Button
+const newButton = document.querySelector('button');
+newButton.textContent = 'Get Started';
