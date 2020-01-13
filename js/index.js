@@ -56,22 +56,30 @@ navText[3].textContent = "Features";
 navText[4].textContent = "About";
 navText[5].textContent = "Contact";
 
-navText.forEach(aColor => aColor.style.color = 'green');
+// append & prepend
+const navBox = document.querySelector('nav');
+const firstLink = document.createElement('a');
+firstLink.textContent = 'Home';
+navBox.prepend(firstLink);
+
+//const navBox = document.querySelector('nav');
+const endLink = document.createElement('a');
+endLink.textContent = 'NSFW';
+navBox.appendChild(endLink);
+
+
+// a link color
+const navColor = document.querySelectorAll('a');
+navColor.forEach(aColor => aColor.style.color = 'green');
 
 // H1
 const ctaText = document.querySelector('h1');
 ctaText.textContent = "DOM IS AWESOME";
 
-// const navBar = document.querySelector('nav');
-
-// navBar.prepend("<a href=''>Test</a>");
-
-// Button
 const newButton = document.querySelector('button');
 newButton.textContent = 'Get Started';
 
 // H4
-
 const headerFour = document.querySelectorAll('h4');
 
 headerFour[0].textContent = 'Features';
@@ -82,7 +90,6 @@ headerFour[4].textContent = 'Vision';
 headerFour[5].textContent = 'Contact';
 
 // text-content 
-
 const textContent = document.querySelectorAll('p');
 
 textContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
