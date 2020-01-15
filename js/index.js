@@ -49,14 +49,17 @@ midPageImg.src = 'img/mid-page-accent.jpg';
 
 // Navigation
 const navText = document.querySelectorAll('a');
-navText[0].textContent = "Services";
-navText[1].textContent = "Product";
-navText[2].textContent = "Vision";
-navText[3].textContent = "Features";
-navText[4].textContent = "About";
-navText[5].textContent = "Contact";
+navText[0].textContent = siteContent.nav["nav-item-1"];
+navText[1].textContent = siteContent.nav["nav-item-2"];
+navText[2].textContent = siteContent.nav["nav-item-3"];
+navText[3].textContent = siteContent.nav["nav-item-4"];
+navText[4].textContent = siteContent.nav["nav-item-5"];
+navText[5].textContent = siteContent.nav["nav-item-6"];
 
-// append & prepend
+// let obectKeys = Object.keys(siteContent.nav);
+// console.log()
+
+// append & prepend links
 const navBox = document.querySelector('nav');
 const firstLink = document.createElement('a');
 firstLink.textContent = 'Home';
@@ -68,7 +71,7 @@ endLink.textContent = 'NSFW';
 navBox.appendChild(endLink);
 
 
-// a link color
+// nav link color
 const navColor = document.querySelectorAll('a');
 navColor.forEach(aColor => aColor.style.color = 'green');
 
@@ -82,23 +85,23 @@ newButton.textContent = 'Get Started';
 // H4
 const headerFour = document.querySelectorAll('h4');
 
-headerFour[0].textContent = 'Features';
-headerFour[1].textContent = 'About';
-headerFour[2].textContent = 'Services';
-headerFour[3].textContent = 'Product';
-headerFour[4].textContent = 'Vision';
-headerFour[5].textContent = 'Contact';
+headerFour[0].textContent = siteContent["main-content"]["features-h4"];
+headerFour[1].textContent = siteContent["main-content"]["about-h4"];
+headerFour[2].textContent = siteContent["main-content"]["services-h4"];
+headerFour[3].textContent = siteContent["main-content"]["product-h4"];
+headerFour[4].textContent = siteContent["main-content"]["vision-h4"];
+headerFour[5].textContent = siteContent.contact["contact-h4"];
 
 // text-content 
 const textContent = document.querySelectorAll('p');
 
-textContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-textContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-textContent[2].textContent = 'services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-textContent[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-textContent[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-textContent[5].textContent =  "123 Way 456 Street Somewhere, USA";
-textContent[6].textContent =  "1 (888) 888-8888";
-textContent[7].textContent =  "sales@greatidea.io";
-textContent[8].textContent = "Copyright Great Idea! 2018";
+textContent[0].textContent = siteContent["main-content"]["features-content"];
+textContent[1].textContent = siteContent["main-content"]["about-content"];
+textContent[2].textContent = siteContent["main-content"]["services-content"];
+textContent[3].textContent = siteContent["main-content"]["product-content"];
+textContent[4].textContent = siteContent["main-content"]["vision-content"];
+textContent[5].textContent = siteContent.contact.address;
+textContent[6].textContent = siteContent.contact.phone;
+textContent[7].textContent = siteContent.contact.email;
+textContent[8].textContent = siteContent.footer.copyright;
 
